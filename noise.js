@@ -7,5 +7,10 @@ $(document).ready( function() {
   });
 
 
-
+  $('.instrument').keydown(function(e) {
+    var key = e.key;
+    var note = "media/" + key + "_note.mp3";
+    var audio = new Audio(note);
+    audio.play();
+  });
 });
